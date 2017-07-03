@@ -1,6 +1,6 @@
 # Duuoo Ticket
 
-[![CircleCI](https://circleci.com/gh/Duuoo/duuoo-ticket.svg?style=svg&circle-token=2cc443dc69233cf7e97c4e239bcdea711f092ee5)](https://circleci.com/gh/Duuoo/duuoo-ticket)
+[![CircleCI](https://circleci.com/gh/Duuoo/duuoo-ticket/tree/master.svg?style=svg&circle-token=e35cf43f6b31cdc6d8e2d32c817107ad2a5375ef)](https://circleci.com/gh/Duuoo/duuoo-ticket/tree/master)
 
 A stateless ticket system, which can be used for things like invites.
 

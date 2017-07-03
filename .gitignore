@@ -1,0 +1,11 @@
+.DS_Store
+.eslintcache
+*.swp
+*~
+
+node_modules
+coverage
+.nyc_output
+npm-debug.log
+npm-debug.log*
+yarn-error.log*

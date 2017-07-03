@@ -1,0 +1,51 @@
+{
+  "name": "@duuoo/ticket",
+  "description": "A simple JWT ticket system",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "repository": "duuoo/duuoo-ticket",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "yarn lint && yarn run test-only",
+    "test-only": "jest --coverage --verbose"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^7.4.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^20.0.3",
+    "babel-preset-env": "^1.5.2",
+    "body-parser": "^1.17.2",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "express": "^4.15.3",
+    "jest": "^20.0.4"
+  },
+  "jest": {
+    "transform": {
+      ".*": "./node_modules/babel-jest"
+    },
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "timers": "fake",
+    "testEnvironment": "node",
+    "modulePathIgnorePatterns": [
+      "__tests__/fixtures/"
+    ],
+    "testPathIgnorePatterns": [
+      "__tests__/(fixtures|__mocks__)/",
+      "/_(helpers).js$"
+    ]
+  }
+}

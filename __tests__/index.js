@@ -57,20 +57,3 @@ test('overwrites sign options', () => {
     iat: expect.anything(),
   }))
 })
-
-test('fails to verify JWT token', () => {
-  const inviteTicket = ticket('meow', { expiresIn: '2h', issuer: 'bear' })
-  const token = inviteTicket.sign({ a: 1, b: 2 })
-  const decode = () => inviteTicket.verify(token, { issuer: 'dog' })
-
-  expect(decode()).toThrow()
-})
-
-// const token = inviteTicket({
-//   email: 'alice@example.com',
-//   givenName: 'Alice',
-//   familyName: 'Doe',
-//   userId: 'omega',
-//   organizationId: 'alpha',
-//   teamId: 'beta',
-// })
